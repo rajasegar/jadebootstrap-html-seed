@@ -1,0 +1,33 @@
+include bootstrap
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title= title
+		link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+		link(rel='stylesheet', href='css/styles.min.css')
+		link(rel="icon",href="favicon.ico")
+	body
+		
+		block content
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+		footer.text-center
+			hr
+			
+			.container
+				p  Designed and built with all the love in the world by <a href="https://twitter.com/hangaroundweb">@hangaroundweb</a>.
+				ul.jb-social-buttons
+					li
+						iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=rajasegar&repo=JADE-Bootstrap&type=watch&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='100px', height='20px')
+					li
+						iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=rajasegar&repo=JADE-Bootstrap&type=fork&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='98px', height='20px')
+					li
+						<a href="https://twitter.com/hangaroundweb" class="twitter-follow-button" data-show-count="true">Follow @hangaroundweb</a>
+						script.
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+					li
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="hangaroundweb">Tweet</a>
+		
+
