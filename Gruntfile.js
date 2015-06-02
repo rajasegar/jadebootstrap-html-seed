@@ -13,9 +13,13 @@ module.exports = function(grunt){
 						debug:false
 					}
 				},
-				files:{
-					"build/index.html" : "jade/index.jade"
-				}
+				files:[{
+					expand:true,
+					cwd:'jade/',
+					src:['*.jade','!_*.jade'],
+					dest:'html/',
+					ext:'.html'
+				}]
 			}
 		},
 		watch:{
