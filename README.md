@@ -13,6 +13,21 @@ $ cd jadebootstrap-html-seed
 $ npm install
 $ grunt
 ```
+
+##Create a new jade file
+```bash
+$ cd jadebootstrap-html-seed\jade
+$ touch helloworld.jade
+```
+
+##Extending JADE Bootstrap
+```bash
+extends _bootstrap
+block body
+    Hello World!
+```
+
+
 ## Features
 
   * Bootstrap set as the default UI framework
