@@ -6,7 +6,7 @@ module.exports = function(grunt){
 		bower:{
 			install:{
 				options:{
-					targetDir:'./jade'
+					// You can override some default options here
 				}
 			}
 		},
@@ -30,7 +30,7 @@ module.exports = function(grunt){
 				files:[{
 					expand:true,
 					cwd:'jade/',
-					src:['*.jade','!_*.jade'],
+					src:['*.jade','**/*.jade','!_*.jade'],
 					dest:'html/',
 					ext:'.html'
 				}]
